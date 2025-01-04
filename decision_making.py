@@ -11,8 +11,12 @@ else:
 # 2) Uses `if/elif/else` to print whether the user is a child, teen, or adult.
 try:
     user_age = int(input("Write down your age right after this sentence. "))
-
-    if user_age <= 1:
+    
+    if user_age < 0:
+        print("Nice try there, punk. There are no negative ages! 😤")
+    elif user_age == 0:
+        print("Well! It seems you are a newborn! 🎉 Enjoy this next year! There's only one time you will be 0-years old! 😬")
+    elif user_age <= 1:
         print("You are a baby! 🐣 Goo goo gah gah!")
     elif user_age <= 3:
         print("You are a toddler! 👶 Baby Shark! 🦈")
@@ -29,6 +33,6 @@ try:
     elif user_age <= 64:
         print("You are an adult! 🥂 Life still doesn't make sense! 😭")
     else:
-        print("This is it! You are a senior citizen! 👴👵 You better have a loved one next to you so you aren't lonely!")
+        print("This is it! You are a senior citizen! 👴👵 You better have a loved one next to you so you aren't lonely! 🥰")
 except ValueError:
     print("Did you think I wouldn't notice? Come on now! Write your age! Don't be so presumptious! 😡")
